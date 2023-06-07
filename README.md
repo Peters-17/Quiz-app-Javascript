@@ -6,7 +6,6 @@ Self-practice of using AngularJs
 
 Using command: `http-server`
 
-![image](https://github.com/Peters-17/Quiz-app-AngularJS/assets/85666623/433444b8-b595-4591-8b61-d7b506247be7)
 
 ## How it looks like
 
