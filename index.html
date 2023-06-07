@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html ng-app="quizApp">
+  <head>
+    <title>Quiz App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="QuizController">
+    <div ng-repeat="question in questions">
+      <h2>{{question.text}}</h2>
+      <div ng-repeat="answer in question.answers">
+        <input type="radio" ng-model="question.userAnswer" ng-value="$index"> {{answer.text}}
+      </div>
+    </div>
+    <button ng-click="getScore()">Submit</button>
+    <h2 ng-if="score != null">Your score: {{score}}/{{questions.length}}</h2>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html ng-app="quizApp">
+  <head>
+    <title>Quiz App</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 30px;
+        background-color: #f0f0f0;
+      }
+      h2 {
+        color: #333;
+      }
+      input[type="radio"] {
+        margin: 10px;
+      }
+      .question {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body ng-controller="QuizController">
+    <div class="question" ng-repeat="question in questions">
+      <h2>{{question.text}}</h2>
+      <div ng-repeat="answer in question.answers">
+        <input type="radio" ng-model="question.userAnswer" ng-value="$index"> {{answer.text}}
+      </div>
+    </div>
+    <button ng-click="getScore()">Submit</button>
+    <h2 ng-if="score != null">Your score: {{score}}/{{questions.length}}</h2>
+  </body>
+</html>
+
