@@ -1,4 +1,4 @@
-# Quiz-app-AngularJS
+# Quiz-app-Javascript
 
 Self-practice of using AngularJs
 
